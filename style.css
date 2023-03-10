@@ -1,22 +1,26 @@
-body{
-background-color:#DFD2B9 ;
-
+body {
+    background-color: #DFD2B9;
+    font-family: Chivo;
 }
 
-.skills{
-margin-top: 700px;
+header{
 
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
 }
 
-.navbar{
-    list-style:none;
+.navbar {
+    list-style: none;
     display: flex;
     
-    
-position:fixed;
 
 }
-li{
-padding:15px;
+.skills{
+
+
+}
+li {
+    padding: 15px;
 
 }
