@@ -9,6 +9,14 @@ margin-top: 700px;
 }
 
 .navbar{
+    list-style:none;
+    display: flex;
+    
+    
 position:fixed;
+
+}
+li{
+padding:15px;
 
 }
