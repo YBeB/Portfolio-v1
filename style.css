@@ -1,14 +1,17 @@
+header{
+    position: sticky;
+
+    display: flex;
+    justify-content: space-between;
+    top: 20px;
+}
+
 body {
     background-color: #DFD2B9;
     font-family: Chivo;
 }
 
-header{
 
-    position: sticky;
-    display: flex;
-    justify-content: space-between;
-}
 
 .navbar {
     list-style: none;
@@ -16,11 +19,12 @@ header{
     
 
 }
-.skills{
-
+#skills{
+height: 5544px;
 
 }
 li {
+  
     padding: 15px;
 
 }
