@@ -1,4 +1,4 @@
-header{
+header {
     position: sticky;
 
     display: flex;
@@ -16,15 +16,56 @@ body {
 .navbar {
     list-style: none;
     display: flex;
-    
+
 
 }
-#skills{
-height: 5544px;
 
-}
+
+
 li {
-  
-    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 13px 0px 13px;
+
+}
+
+nav {
+    background: #444218;
+    font-size: 24px;
+    border-radius: 800px;
+    height: 55px;
+}
+
+a {
+    text-decoration: none;
+    color: #DFD2B9;
+}
+
+.line--h1 {
+    border-bottom: 5px orange solid;
+    width: 30%;
+}
+
+.namep {
+    font-weight: 100;
+}
+
+.namep--name {font-weight: 700;}
+
+.navbar li.active a{
+
+background-color:#EB5810;
+height: 55px;
+padding: 0px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 90px;
+  }
+
+
+section{
+    height: 100vh;
 
 }
