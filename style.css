@@ -1,5 +1,5 @@
 header {
-    position: sticky;
+position: sticky;    
 
     display: flex;
     justify-content: space-between;
@@ -16,25 +16,24 @@ body {
 .navbar {
     list-style: none;
     display: flex;
-
-
 }
-
 
 
 li {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    padding: 0px 13px 0px 13px;
-
+    width: 150px;
 }
 
-nav {
+.wrapper {
     background: #444218;
-    font-size: 24px;
+    font-size: 22px;
     border-radius: 800px;
     height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 a {
@@ -51,21 +50,32 @@ a {
     font-weight: 100;
 }
 
-.namep--name {font-weight: 700;}
+.namep--name {
+    font-weight: 700;
+}
 
-.navbar li.active a{
+.navbar li a {
+    transition: all 0.3s ease-in-out;
+}
 
-background-color:#EB5810;
-height: 55px;
-padding: 0px;
-display: flex;
-justify-content: center;
-align-items: center;
-border-radius: 90px;
-  }
+.navbar li.active a {
 
+    background-color: #EB5810;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    border-radius: 90px;
 
-section{
-    height: 100vh;
+}
 
+.bg--image{
+
+background-image: url("/20230307_150344.jpg");
+
+}
+
+section {
+    height: 90vh;
 }
