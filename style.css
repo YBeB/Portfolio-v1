@@ -10,7 +10,10 @@ body {
     background-color: #DFD2B9;
     font-family: Chivo;
 }
+html{
+scroll-behavior: smooth;
 
+}
 
 
 .navbar {
@@ -70,12 +73,46 @@ a {
 
 }
 
-.bg--image{
+#accueil{
 
-background-image: url("/20230307_150344.jpg");
+    background: url('/20230307_150344.jpg') no-repeat center center fixed;
+    background-size:100%;
+    margin-left: -8px;
+    margin-right:-8px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
 
+.moving--text{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 90%;
+font-size: 50px;
+color:#dab572; ;
+}
+.word--moving::before{
+    content: "";
+animation : animate infinite 5s;
+animation-timing-function: ease-in-out;
+padding-left: 10px;
+
+}
+@keyframes animate{
+0%{
+content: "Developper";
+background-color: #EB5810;
+}
+
+50%{content: "Player";
+    background-color: #444218;
+}
+
+
+100%{ content:"Reader";}
 }
 
 section {
-    height: 90vh;
+    height: 100vh;
 }
