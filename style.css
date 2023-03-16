@@ -53,8 +53,8 @@ a {
     font-weight: 100;
 }
 
-.namep--name {
-    font-weight: 700;
+#namep--name {
+    font-weight: 900;
 }
 
 .navbar li a {
@@ -93,11 +93,11 @@ font-size: 50px;
 color:#dab572; ;
 }
 .word--moving::before{
-    content: "";
+    content: " Developper";
 animation : animate infinite 5s;
 animation-timing-function: ease-in-out;
-padding-left: 10px;
-
+padding-left: 15px;
+margin-left: 20px;
 }
 @keyframes animate{
 0%{
