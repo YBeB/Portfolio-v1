@@ -14,11 +14,19 @@ html{
 scroll-behavior: smooth;
 
 }
+.logo{
 
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width:115px ;
+    height: auto;
+    }
 
 .navbar {
     list-style: none;
     display: flex;
+
 }
 
 
