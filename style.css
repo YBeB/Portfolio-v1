@@ -146,7 +146,7 @@ section {
 
 .img-profile {
     width: 260px;
-   display: flex;
+    display: flex;
 
 }
 
@@ -156,23 +156,34 @@ section {
     width: 100%;
 }
 
-.wrapperimg{
-justify-content: center;
-align-items: center;
+.wrapperimg {
+    justify-content: center;
+    align-items: center;
 }
-.description--wrapper{display: flex;
-justify-content: center;
-align-items: center;}
+
+.description--wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .testa {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
 }
-.AGE{
-width: 44px;
-position: relative
-;
-bottom: 400PX;
-left: 49PX;
+
+.AGE {
+    width: 44px;
+    position: relative;
+    bottom: 400PX;
+    left: 49PX;
 }
+
+.paper--descritpion {
+    width: 800px;
+    padding-top: 40px;
+}
+.profilewrapper{display: flex;
+justify-content: center;}
