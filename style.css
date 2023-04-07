@@ -7,6 +7,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 99;
 }
 
 body {
@@ -181,9 +182,33 @@ section {
     left: 49PX;
 }
 
-.paper--descritpion {
-    width: 800px;
+.paper--description {
+    width: 100%;
     padding-top: 40px;
 }
 .profilewrapper{display: flex;
 justify-content: center;}
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .imgpost{
+    width: 60%;
+    transform:rotate(90deg);
+
+}
+.postit-img{display: flex;
+justify-content: center;}
+
+.paradescription{position:absolute;
+right: 9%;
+bottom:40%;
+width: 30%;
+
+}
