@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Biro Script';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Biro Script'), url('./img/Biro_Script.woff2') format('woff2');
+    }
+
 header {
     position: fixed;
     top: 0;
@@ -206,9 +213,19 @@ justify-content: center;}
 .postit-img{display: flex;
 justify-content: center;}
 
-.paradescription{position:absolute;
-right: 9%;
-bottom:40%;
-width: 30%;
-
+.paradescription{
+position:absolute;
+width: 600px;
+margin-left:100px;
+margin-top: 60px;
+top: 200px;
+font-size: 20px;
+font-family: 'Biro Script';
 }
+.postitpara{position: absolute;
+width: 150px;
+}
+
+
+
+
