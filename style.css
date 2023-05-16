@@ -3,7 +3,7 @@
     font-style: normal;
     font-weight: normal;
     src: local('Biro Script'), url('./img/Biro_Script.woff2') format('woff2');
-    }
+}
 
 header {
     position: fixed;
@@ -143,6 +143,7 @@ a {
 
 section {
     height: 100vh;
+    width: 100vw;
 }
 
 #about-me {
@@ -190,142 +191,194 @@ section {
 }
 
 .paper--description {
-    width: 80vh;
-    padding-top: 40px;
+    width: 49vw;
+    height: auto;
 }
-.profilewrapper{display: flex;
-justify-content: center;}
-.reveal{
+
+.profilewrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.reveal {
     position: relative;
     transform: translateY(150px);
     opacity: 0;
     transition: 2s all ease;
-  }
-  .reveal.active{
+}
+
+.reveal.active {
     transform: translateY(0);
     opacity: 1;
-  }
-  .imgpost{
+}
+
+.imgpost {
     width: 40vh;
-    transform:rotate(90deg);
+    transform: rotate(90deg);
 
 }
-.postit-img{display: flex;
-justify-content: center;}
 
-.paradescription{
+.postit-img {
+    display: flex;
+    justify-content: center;
+}
+
+.paradescription {
     position: absolute;
-    width: 31vw;
-    margin-left: 8vw;
-    margin-top: 60px;
+    width: 35vw;
+    margin-left: 6vw;
+    margin-top: 3vh;
     top: 15vh;
-    font-size: 2vh;
-   
-font-family: 'Biro Script';
-}
-.postitpara{position: absolute;
-width: 150px;
-}
-.slider{width: 100%;height: 100%;display: flex; justify-content: center; flex-direction: column;}
-.slider input{display: none;}
-.testimonials{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: relative;
-	min-height: 350px;
-	perspective: 1000px;
-	overflow: hidden;
-}
-.testimonials .item{
-	width: 300px;
-	padding: 30px;
-	border-radius: 5px;
-	background-color: #21262d;
-	position: absolute;
-	border:3px solid white;
-	top: 0;
-	box-sizing: border-box;
-	text-align: center;
-	transition: transform 0.4s;
-	box-shadow: 0 0 10px rgba(0,0,0,0.3);
-	user-select: none;
-	cursor: pointer;
-}
-.testimonials .item h1{font-size: 114px; color: white;}
-.dots{display: flex; justify-content: center;align-items: center;}
-.dots label{
-	height: 5px;
-	width: 5px;
-	border-radius: 50%;
-	cursor: pointer;
-	background-color: #413B52;
-	margin: 7px;
-	transition-duration: 0.2s;
-}
-#t-1:checked ~ .dots label[for="t-1"],
-#t-2:checked ~ .dots label[for="t-2"],
-#t-3:checked ~ .dots label[for="t-3"],
-#t-4:checked ~ .dots label[for="t-4"],
-#t-5:checked ~ .dots label[for="t-5"]{
-	transform: scale(2);
-	background-color: #fff;
-	box-shadow: 0px 0px 0px 3px #dddddd24;
+    font-size:1.2vw;
+
+    font-family: 'Caveat';
 }
 
-#t-1:checked ~ .dots label[for="t-2"],
-#t-2:checked ~ .dots label[for="t-1"],
-#t-2:checked ~ .dots label[for="t-3"],
-#t-3:checked ~ .dots label[for="t-2"],
-#t-3:checked ~ .dots label[for="t-4"],
-#t-4:checked ~ .dots label[for="t-3"],
-#t-4:checked ~ .dots label[for="t-5"],
-#t-5:checked ~ .dots label[for="t-4"]{
-	transform: scale(1.5);
+.postitpara {
+    position: absolute;
+    width: 7vw;
 }
 
-#t-1:checked ~ .testimonials label[for="t-3"],
-#t-2:checked ~ .testimonials label[for="t-4"],
-#t-3:checked ~ .testimonials label[for="t-5"],
-#t-4:checked ~ .testimonials label[for="t-1"],
-#t-5:checked ~ .testimonials label[for="t-2"]{
-	transform: translate3d(600px, 0, -180px) rotateY(-25deg);
-	z-index: 2;
-}
-
-#t-1:checked ~ .testimonials label[for="t-2"],
-#t-2:checked ~ .testimonials label[for="t-3"],
-#t-3:checked ~ .testimonials label[for="t-4"],
-#t-4:checked ~ .testimonials label[for="t-5"],
-#t-5:checked ~ .testimonials label[for="t-1"]{
-	transform: translate3d(300px, 0, -90px) rotateY(-15deg);
-	z-index: 3;
-}
-
-#t-2:checked ~ .testimonials label[for="t-1"],
-#t-3:checked ~ .testimonials label[for="t-2"],
-#t-4:checked ~ .testimonials label[for="t-3"],
-#t-5:checked ~ .testimonials label[for="t-4"],
-#t-1:checked ~ .testimonials label[for="t-5"]{
-	transform: translate3d(-300px, 0, -90px) rotateY(15deg);
-	z-index: 3;
-}
-
-#t-3:checked ~ .testimonials label[for="t-1"],
-#t-4:checked ~ .testimonials label[for="t-2"],
-#t-5:checked ~ .testimonials label[for="t-3"],
-#t-2:checked ~ .testimonials label[for="t-5"],
-#t-1:checked ~ .testimonials label[for="t-4"]{
-	transform: translate3d(-600px, 0, -180px) rotateY(25deg);
-	
-}
-
-#t-1:checked ~ .testimonials label[for="t-1"],
-#t-2:checked ~ .testimonials label[for="t-2"],
-#t-3:checked ~ .testimonials label[for="t-3"],
-#t-4:checked ~ .testimonials label[for="t-4"],
-#t-5:checked ~ .testimonials label[for="t-4"],
-#t-5:checked ~ .testimonials label[for="t-5"]{
-	
-	z-index: 4;
-}
+.CSSgal {
+    position: relative;
+    overflow: hidden;
+    height: 100%; /* Or set a fixed height */
+  }
+  
+  /* SLIDER */
+  
+  .CSSgal .slider {
+    height: 100%;
+    white-space: nowrap;
+    font-size: 0;
+    transition: 0.8s;
+  }
+  
+  /* SLIDES */
+  
+  .CSSgal .slider > * {
+    font-size: 1rem;
+    display: inline-block;
+    white-space: normal;
+    vertical-align: top;
+    height: 100%;
+    width: 100%;
+    background: none 50% no-repeat;
+    background-size: cover;
+  }
+  
+  /* PREV/NEXT, CONTAINERS & ANCHORS */
+  
+  .CSSgal .prevNext {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    width: 100%;
+    height: 0;
+  }
+  
+  .CSSgal .prevNext > div+div {
+    visibility: hidden; /* Hide all but first P/N container */
+  }
+  
+  .CSSgal .prevNext a {
+    background: #fff;
+    position: absolute;
+    width:       60px;
+    height:      60px;
+    line-height: 60px; /* If you want to place numbers */
+    text-align: center;
+    opacity: 0.7;
+    -webkit-transition: 0.3s;
+            transition: 0.3s;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 0;
+  }
+  .CSSgal .prevNext a:hover {
+    opacity: 1;
+  }
+  .CSSgal .prevNext a+a {
+    left: auto;
+    right: 0;
+  }
+  
+  /* NAVIGATION */
+  
+  .CSSgal .bullets {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+  .CSSgal .bullets > a {
+    display: inline-block;
+    width:       30px;
+    height:      30px;
+    line-height: 30px;
+    text-decoration: none;
+    text-align: center;
+    background: rgba(255, 255, 255, 1);
+    -webkit-transition: 0.3s;
+            transition: 0.3s;
+  }
+  .CSSgal .bullets > a+a {
+    background: rgba(255, 255, 255, 0.5); /* Dim all but first */
+  }
+  .CSSgal .bullets > a:hover {
+    background: rgba(255, 255, 255, 0.7) !important;
+  }
+  
+  /* NAVIGATION BUTTONS */
+  /* ALL: */
+  .CSSgal >s:target ~ .bullets >* {      background: rgba(255, 255, 255, 0.5);}
+  /* ACTIVE */
+  #s1:target ~ .bullets >*:nth-child(1) {background: rgba(255, 255, 255,   1);}
+  #s2:target ~ .bullets >*:nth-child(2) {background: rgba(255, 255, 255,   1);}
+  #s3:target ~ .bullets >*:nth-child(3) {background: rgba(255, 255, 255,   1);}
+  #s4:target ~ .bullets >*:nth-child(4) {background: rgba(255, 255, 255,   1);}
+  /* More slides? Add here more rules */
+  
+  /* PREV/NEXT CONTAINERS VISIBILITY */
+  /* ALL: */
+  .CSSgal >s:target ~ .prevNext >* {      visibility: hidden;}
+  /* ACTIVE: */
+  #s1:target ~ .prevNext >*:nth-child(1) {visibility: visible;}
+  #s2:target ~ .prevNext >*:nth-child(2) {visibility: visible;}
+  #s3:target ~ .prevNext >*:nth-child(3) {visibility: visible;}
+  #s4:target ~ .prevNext >*:nth-child(4) {visibility: visible;}
+  /* More slides? Add here more rules */
+  
+  /* SLIDER ANIMATION POSITIONS */
+  
+  #s1:target ~ .slider {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
+  #s2:target ~ .slider {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
+  #s3:target ~ .slider {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
+  #s4:target ~ .slider {transform: translateX(-300%); -webkit-transform: translateX(-300%);}
+  /* More slides? Add here more rules */
+  
+  
+  /* YOU'RE THE DESIGNER! 
+     ____________________
+     All above was mainly to get it working :)
+     CSSgal CUSTOM STYLES / OVERRIDES HERE: */
+  
+  .CSSgal{
+    color: #fff;  
+    text-align: center;
+  }
+  .CSSgal .slider h2 {
+    margin-top: 40vh;
+    font-weight: 200;
+    letter-spacing: -0.06em;
+    word-spacing: 0.2em;
+    font-size: 3em;
+  }
+  .CSSgal a {
+    border-radius: 50%;
+    margin: 0 3px;
+    color: rgba(0,0,0,0.8);
+    text-decoration: none;
+  }

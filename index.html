@@ -10,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@200;300;400;500&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
     <title>Document</title>
 </head>
 
@@ -69,39 +70,47 @@
 
     </section>
     <section id="project">
-        <div class="slider">
-            <input type="radio" name="testimonial" id="t-1">
-            <input type="radio" name="testimonial" id="t-2">
-            <input type="radio" name="testimonial" id="t-3" checked>
-            <input type="radio" name="testimonial" id="t-4">
-            <input type="radio" name="testimonial" id="t-5">
-            <div class="testimonials">
-                <label class="item" for="t-1">
-                    <h1></h2>
-                </label>
-                <label class="item" for="t-2">
-                    <h1></h2>
-                </label>
-                <label class="item" for="t-3">
-                    <h1></h2>
-                </label>
-                <label class="item" for="t-4">
-                    <h1></h2>
-                </label>
-                <label class="item" for="t-5">
-                    <h1></h2>
-                </label>
-            </div>
-            <br/>
-            <div class="dots">
-                <label for="t-1"></label>
-                <label for="t-2"></label>
-                <label for="t-3"></label>
-                <label for="t-4"></label>
-                <label for="t-5"></label>
-            </div>
-        </div>
+        <div class="CSSgal">
 
+            <!-- Don't wrap targets in parent -->
+            <s id="s1"></s> 
+            <s id="s2"></s>
+            <s id="s3"></s>
+            <s id="s4"></s>
+          
+            <div class="slider">
+              <div style="background-image:url(./img/Oh\ my\ food.png)">
+                <h2 style="color:black"><a href="https://github.com/YBeB/YounesBouchiba_3_03122021">Oh My Food</a></h2>
+                <p style="color:#85b"><a href="https://github.com/YBeB/YounesBouchiba_3_03122021">Copie d'une maquette et intégration d'animation en css </a></p>
+              </div>
+              <div style="background-image:url(./img/Kanap.png);">
+                <h2><a href="https://github.com/YBeB/P5_Construisez_un_site_e_commerce_en_JS" >Kanap</a></h2>
+                <p><a href="https://github.com/YBeB/P5_Construisez_un_site_e_commerce_en_JS" >Intégration d'une page web dynamique avec Javascript(API)</a></p>
+              </div>
+              <div style="background-image:url(./img/Hot\ takes.png);">
+                <h2 style="color:black"><a href="https://github.com/YBeB/P6_Construisez_une_API_securisee_pour_une_application_d_avis_gastronomiques">Hot Takes</a></h2>
+                <p style="color: black"><a href="https://github.com/YBeB/P6_Construisez_une_API_securisee_pour_une_application_d_avis_gastronomiques">Création d'une api avec Node JS et MongoDB</a></p>
+              </div>
+              <div style="background:#e59;">
+                <h2>Slide 4</h2>
+              </div>
+            </div>
+            
+            <div class="prevNext">
+              <div><a href="#s4"></a><a href="#s2"></a></div>
+              <div><a href="#s1"></a><a href="#s3"></a></div>
+              <div><a href="#s2"></a><a href="#s4"></a></div>
+              <div><a href="#s3"></a><a href="#s1"></a></div>
+            </div>
+          
+            <div class="bullets">
+              <a href="#s1">1</a>
+              <a href="#s2">2</a>
+              <a href="#s3">3</a>
+              <a href="#s4">4</a>
+            </div>
+          
+          </div>
     </section>
     <section id="skills">
 
